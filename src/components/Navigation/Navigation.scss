@@ -1,0 +1,15 @@
+@import './../../styles/variables';
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__link {
+    color: $gray-0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $font-family;
+  }
+}

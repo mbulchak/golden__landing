@@ -1,10 +1,12 @@
-import './App.css';
+import './App.scss';
+import {Header} from './widgets/Header';
 
 function App() {
   return (
     <>
-      <h2>Hello World</h2>
-      <h3>dfsd</h3>
+      <div className='app'>
+        <Header />
+      </div>
     </>
   );
 }
