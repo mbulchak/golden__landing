@@ -1,0 +1,56 @@
+@use './../../styles/variables' as *;
+
+.service {
+  padding-inline: 130px;
+  margin-bottom: 200px;
+
+  height: 673px;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__card {
+    width: 380px;
+    height: 326px;
+
+    border-radius: 25px;
+    background: 
+      linear-gradient(to bottom , transparent, #303A78, #292E4B 55%),
+      rgba(223, 29, 255, 0.3);
+
+    z-index: 1;
+    padding: 27px 26px;
+
+    &__main {
+      font-family: $font-family;
+
+      &__sub--title {
+        width: 111px;
+        color: $primery;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+      }
+
+      &__title {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 130%;
+        color: $gray-0;
+      }
+
+      &__description {
+        color: $gray-30;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+
+  }
+}
