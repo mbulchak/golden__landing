@@ -1,4 +1,5 @@
 import { ScrollSection } from '../ScrollSection';
+import { Services } from '../Services';
 import {Token} from '../Token';
 
 export const Main = () => {
@@ -7,6 +8,8 @@ export const Main = () => {
       <Token />
 
       <ScrollSection />
+
+      <Services />
     </>
   );
 };
