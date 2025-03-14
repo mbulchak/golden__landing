@@ -1,0 +1,155 @@
+@use './../../styles/variables' as *;
+
+.team {
+  overflow: hidden;
+  position: relative;
+
+  &__content {
+    position: relative;
+    width: 542px;
+    height: 314px;
+
+    margin: 130px 0px 133px 130px;
+
+    font-family: $font-family;
+    
+  }
+
+  &__sub--title {
+    color: $primery;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+
+    margin-bottom: 4px;
+
+    z-index: 2;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 130%;
+    color: #E9EEF4;
+
+    margin-bottom: 24px;
+    z-index: 2;
+
+  }
+
+  &__description {
+    margin-bottom: 24px;
+
+    color: $gray-1plus;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    z-index: 2;
+
+
+  }
+
+  &__button {
+    width: 291px;
+    height: 62px;
+  }
+
+  &__bitcoin {
+    width: 221px;
+    height: 231px;
+
+    position: absolute;
+    
+    top: 0;
+    right: -85px;
+    transform: rotate(-32deg);
+    z-index: 1;
+  }
+
+  &__member {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+
+    width: 681px;
+    height: 494px;
+  }
+
+  &__card__add {
+    position: absolute;
+
+    width: 269px;
+    height: 179px;
+
+    border-radius: 25px;
+    border: 1px solid rgba($color: $gray-0, $alpha: 0.3);
+    background: 
+      linear-gradient(to right bottom, transparent 15%, #292E4B , #25283A, #292E4B, rgba(223, 29, 255, 0.6) 85%),
+      radial-gradient($gradient-purple-1, $gradient-add-2);
+
+    bottom: 60px;
+    right: 20%;
+
+    padding: 16px 30px;
+
+    font-family: $font-family;
+    color: $gray-0;
+
+    z-index: 1;
+
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+
+      margin-bottom: 17px;
+    }
+
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+  }
+
+  &__effect__indigo {
+    position: absolute;
+
+    width: 45%;
+    height: 100%;
+    z-index: 0;
+
+    background: linear-gradient(to top right, #3DA5F5 ,#292E4B 25%, transparent 75% );
+    filter: blur(140px);
+   
+    top: 0;
+  }
+
+  &__effect__green__purple {
+    position: absolute;
+
+    width: 45%;
+    height: 100%;
+    z-index: 0;
+
+    top: 0;
+    right: 0;
+
+    background: linear-gradient(to left bottom, $gradient-purple-2 5%, transparent, $gradient-green-2 75%);
+    filter: blur(200px);
+  }
+
+  &__effect__blue {
+    position: absolute;
+
+    width: 100%;
+    height: 30%;
+    z-index: 1;
+
+    bottom: 0;
+    background: linear-gradient(#213763, #2A3A56);
+    filter: blur(60px);
+  }
+}
