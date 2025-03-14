@@ -1,6 +1,7 @@
-@import './../../styles/variables';
+@use './../../styles/variables' as *;
 
 .header {
+  overflow: hidden;
   margin-bottom: 57px;
   height: 909px;
   // width: 1400px;
@@ -10,7 +11,6 @@
   &--first__part {
     display: flex;
     align-items: center;
-    // gap: 200px;
     justify-content: space-around;
 
     margin-inline: 130px;
@@ -39,9 +39,6 @@
     align-items: center;
 
     position: relative;
-
-    // background-image: linear-gradient($gradient-purple-1, $gradient-purple-2);
-    // filter: blur(130px);
   }
 
   &--third__part {
@@ -58,6 +55,29 @@
     line-height: 130%;
 
     z-index: 2;
+
+    &__add {
+      height: 56px;
+      border-radius: 25px;
+      border: 1px solid transparent;
+
+      padding:  10px;
+      transform: rotate(-3deg);
+
+      position: absolute;
+      top: -15px;
+      left: 43%;
+
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 130%;
+
+      color: $gray-0;
+
+      background: linear-gradient(to right bottom, $gradient-add-4 10%, #5b156c 50%);
+      background-clip: padding-box;
+    }
   }
 
   &__description {
@@ -174,10 +194,11 @@
     height: 251px;
 
     position: absolute;
+    overflow: hidden;
     
     border-radius: 25px;
     border: 1px solid transparent;
-    background: linear-gradient(#292E4B , #25283A);
+    background: linear-gradient(#292E4B , #25283A, #292E4B);
 
     z-index: 2;
 
@@ -210,7 +231,6 @@
   
       }
     }
-
 
     &--2 {
       top: 315px;

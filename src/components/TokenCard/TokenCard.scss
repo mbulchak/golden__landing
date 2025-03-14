@@ -1,0 +1,46 @@
+@use './../../styles/variables' as *;
+
+.token {
+  &__card {
+    width: 380px;
+    height: 330px;
+  
+    border-radius: 25px;
+    border: 1px solid rgba($color: $gray-0, $alpha: 0.1);
+  
+    background: linear-gradient(to right top, #292E4B , #25283A, #292E4B);
+    padding: 40px 37px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  
+    font-family: $font-family;
+  
+    &__image {
+      width: 80px;
+      height: 80px;
+      
+      margin-bottom: 24px;
+    }
+  
+    &__title {
+      color: $gray-30;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 130%;
+  
+      margin-bottom: 16px;
+    }
+  
+    &__desctiption {
+      color: $gray-1plus;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+  }
+}

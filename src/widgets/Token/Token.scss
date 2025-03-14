@@ -1,0 +1,117 @@
+@use './../../styles/variables' as *;
+
+.token {
+  position: relative;
+
+  margin-bottom: 200px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 100px;
+
+    font-family: $font-family;
+
+    &__small {
+      color: $primery;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    &__main {
+      color: $gray-0;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 130%;
+    }
+
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+
+      color: $gray-30;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+  }
+
+  &__card {
+    &__general {
+      overflow: hidden;
+      position: relative;
+      border-radius: 25px;
+    }
+  
+    &--1, &--3 {
+  
+      &__effect--1 {
+        top: 5px;
+        left: 5px;
+        background: radial-gradient($gradient-purple-1, $gradient-add-2);
+      }
+  
+      &__effect--2 {
+        bottom: 5px;
+        right: 5px;
+  
+        background: radial-gradient($gradient-add-3 10%, $gradient-purple-2 55%);
+      }
+      
+    }
+  
+    &--2 {
+      &__effect--1 {
+        bottom: 5px;
+        left: 5px;
+        background: radial-gradient($gradient-purple-1, $gradient-add-2);
+      }
+  
+      &__effect--2 {
+        top: 5px;
+        right: 5px;
+  
+        background: radial-gradient($gradient-add-3 10%, $gradient-purple-2 55%);
+      }
+    }
+  
+    &__effect{
+      position: absolute;
+  
+      width: 80px;
+      height: 100px;
+  
+      filter: blur(45px);
+    }
+  }
+
+  &__bitcoin{
+    position: absolute;
+    top: -10px;
+    right: 48px;
+
+    width: 183px;
+    height: 180px;
+    transform: (rotate(-15deg));
+  }
+
+  &__star {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    bottom: -70px;
+    right: 230px;
+  }
+}

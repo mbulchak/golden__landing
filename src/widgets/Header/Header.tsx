@@ -56,6 +56,8 @@ export const Header = () => {
         </div>
 
         <div className='purple--blur--linear'></div>
+
+        <div className='header__title__add'>Lörem ipsum treras.</div>
       </div>
 
       <div className='header--third__part'>
