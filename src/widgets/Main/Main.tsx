@@ -1,3 +1,4 @@
+import { Modules } from '../Modules';
 import { ScrollSection } from '../ScrollSection';
 import { Services } from '../Services';
 import { Team } from '../Team';
@@ -13,6 +14,8 @@ export const Main = () => {
       <Services />
 
       <Team />
+
+      <Modules />
     </>
   );
 };

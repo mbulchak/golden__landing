@@ -11,11 +11,11 @@ export const Token = () => {
   return (
     <div className='token'>
       <div className='token__title'>
-        <h5 className='token__title__small'>Our Token</h5>
+        <h5 className='sub--title'>Our Token</h5>
 
-        <h2 className='token__title__main'>Token seal</h2>
+        <h2 className='title'>Token seal</h2>
 
-        <p className='token__title__description'>
+        <p className='token__title__description description'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum <br /> aliquet turpis
           elit elit natoque varius eget facilisi. Amet rhoncus
         </p>

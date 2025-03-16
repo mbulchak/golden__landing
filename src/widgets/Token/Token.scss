@@ -14,27 +14,8 @@
 
     font-family: $font-family;
 
-    &__small {
-      color: $primery;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 130%;
-    }
-
-    &__main {
-      color: $gray-0;
-      font-weight: 900;
-      font-size: 50px;
-      line-height: 130%;
-    }
-
     &__description {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 140%;
       text-align: center;
-
-      color: $gray-30;
     }
   }
 

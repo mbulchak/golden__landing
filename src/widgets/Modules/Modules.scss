@@ -1,0 +1,59 @@
+@use './../../styles/variables' as *;
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  position: relative;
+  margin-bottom: 200px;
+
+  &__titles {
+    width: 500px;
+    text-align: center;
+
+    font-family: $font-family;
+  }
+
+  &__sub--title {
+    text-align: center;
+  }
+
+  &__block{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &__effect {
+    position: absolute;
+
+    &__green {
+      top: -15%;
+      right: 0;
+
+      width: 170px;
+      height: 200px;
+
+      background: linear-gradient(to right, $gradient-green-2 15%, $gradient-green-1 75%, transparent);
+      filter: blur(100px);
+    }
+
+    &__indigo {
+      bottom: -25%;
+      left: 0;
+
+      width: 170px;
+      height: 250px;
+
+      background: radial-gradient( #303A78 15%, #3E45EE);
+      filter: blur(90px);
+    }
+   
+  }
+}

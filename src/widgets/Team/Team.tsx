@@ -17,8 +17,6 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, TextPlugin);
 export const Team = () => {
   const container = useRef(null);
 
-  console.log(container)
-
   useGSAP(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -50,11 +48,11 @@ export const Team = () => {
     <>
       <div className='team' ref={container}>
         <div className='team__content'>
-          <h5 className='team__sub--title'>Team</h5>
+          <h5 className='team__sub--title sub--title'>Team</h5>
 
-          <h2 className='team__title'>Member of our expert team</h2>
+          <h2 className='team__title title'>Member of our expert team</h2>
 
-          <p className='team__description'>
+          <p className='team__description description'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit
             elit natoque varius eget facilisi. Amet rhoncus
           </p>
