@@ -1,0 +1,82 @@
+@use './../../styles/variables' as *;
+
+.module {
+  border: 1px solid #8B8B8B;
+  border-radius: 16px;
+
+  display: flex;
+  gap: 338px;
+
+  background: 
+    linear-gradient(to right , transparent, #292E4B 45%),
+    rgba(223, 29, 255, 0.3);
+
+  &__content {
+    font-family: $font-family;
+    margin: 28px 0px 27px 100px;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  &__description--1 {
+    color: $gray-0;
+    margin-bottom: 12px;
+  }
+
+  &__description--2 {
+    font-weight: 700;
+    color: $gray-0;
+    margin-bottom: 8px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__button {
+    padding: 6px 16px;
+
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+
+    background-color: black;
+    border: 1px solid #8A8A8A;
+    color: $gray-0;
+    border-radius: 28px;
+  }
+
+  &__button--1 {
+    background: linear-gradient(to right bottom, #3E45EE 5%, #303A78 55%, transparent),
+    rgba(223, 29, 255, 0.5);
+  }
+
+  &__button--2 {
+    background: linear-gradient(to right, transparent, #303A78 65%, rgba(61, 165, 245, 0.6) ),
+    rgba(223, 29, 255, 0.1);
+  }
+
+  &__button--3 {
+    background: linear-gradient(to right top, rgba(61, 165, 245, 0.6) 10%, #303A78 ,  transparent ),
+    rgba(223, 29, 255, 0.2)
+  }
+
+  &__image {
+    width: 228px;
+
+    border: 1px solid #8B8B8B;
+    border-radius:  111px 16px 16px 111px;
+    background: linear-gradient( 165deg, rgba(139, 139, 139, 0.7) 5%, transparent 55%);
+
+
+    &__main {
+      width: 205px;
+      height: 205px;
+    }
+  }
+}

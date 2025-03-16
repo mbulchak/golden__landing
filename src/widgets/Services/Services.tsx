@@ -11,11 +11,11 @@ export const Services = () => {
     <div className='service'>
       <div className='service__cards'>
         <div className='service__card service__card__main'>
-          <h5 className='service__card__main__sub--title'>Our Services</h5>
+          <h5 className='service__card__main__sub--title sub--title'>Our Services</h5>
 
-          <p className='service__card__main__title'>Our Services for You</p>
+          <p className='title service__card__main__title'>Our Services for You</p>
 
-          <p className='service__card__main__description'>
+          <p className='description service__card__main__description'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore
           </p>

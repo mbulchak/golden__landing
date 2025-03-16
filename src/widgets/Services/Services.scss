@@ -20,7 +20,7 @@
 
     border-radius: 25px;
     background: 
-      linear-gradient(to bottom , transparent, #303A78, #292E4B 55%),
+      linear-gradient(to bottom , transparent, #292E4B 45%),
       rgba(223, 29, 255, 0.3);
 
     z-index: 1;
@@ -31,26 +31,7 @@
 
       &__sub--title {
         width: 111px;
-        color: $primery;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 130%;
-      }
-
-      &__title {
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 130%;
-        color: $gray-0;
-      }
-
-      &__description {
-        color: $gray-30;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
       }
     }
-
   }
 }
