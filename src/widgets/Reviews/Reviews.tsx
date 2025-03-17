@@ -28,8 +28,6 @@ const reviewers = [
 export const Reviews = () => {
   const [selectedUser, setSelectedUser] = useState(reviewers[0]);
 
-  console.log('selectedUser', selectedUser);
-
   return (
     <div className='reviews'>
       <div className='reviewers'>
