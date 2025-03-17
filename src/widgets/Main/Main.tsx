@@ -1,3 +1,4 @@
+import { MembershipPlans } from '../MembershipPlans';
 import { Modules } from '../Modules';
 import { Reviews } from '../Reviews';
 import { ScrollSection } from '../ScrollSection';
@@ -19,6 +20,8 @@ export const Main = () => {
       <Modules />
 
       <Reviews />
+
+      <MembershipPlans />
     </>
   );
 };
