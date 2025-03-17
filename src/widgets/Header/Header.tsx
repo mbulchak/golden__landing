@@ -7,7 +7,7 @@ import starSecond from './../../assets/images/coins/star-2.png';
 import coinM from './../../assets/images/coins/Monero.png';
 import bitcoin from './../../assets/images/coins/bitcoin-big.png';
 import bitcoinBig from './../../assets/images/coins/bitcoin-big.png';
-import coin__Sharp from './../../assets/images/coins/Etherium-2 copy 1.png';
+import coin__Sharp from './../../assets/images/coins/Etherium.png';
 import coint__L from './../../assets/images/coins/coin_L.png';
 
 import person_1 from './../../assets/images/people/person-1.png';
