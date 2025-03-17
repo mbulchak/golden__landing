@@ -4,8 +4,6 @@ import ellipse from './../../assets/images/ellipse.png'
 
 export const MembershipPlans = () => {
   return (
-    <>
-    
     <div className='plans'>
       <div className='plans__titles'>
         <h5 className='sub--title plans__sub--title'>Plans</h5>
@@ -189,8 +187,5 @@ export const MembershipPlans = () => {
       <img className='ellipse ellipse--2' src={ellipse} alt="ellipse" />
       <img className='ellipse ellipse--3' src={ellipse} alt="ellipse" />
     </div>
-
-    <div className="g"></div>
-    </>
   );
 };
