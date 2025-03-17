@@ -1,6 +1,7 @@
 import './ScrollSection.scss';
 
-import star from './../../assets/images/coins/star-2.png';
+import star1 from './../../assets/images/coins/star-2.png';
+import star2 from './../../assets/images/coins/star-3.png';
 
 import {gsap} from 'gsap';
 import {useGSAP} from '@gsap/react';
@@ -76,7 +77,9 @@ export const ScrollSection = () => {
           </div>
         </div>
 
-        <img className='scroll__star' src={star} alt="star" />
+        <img className='scroll__star--1' src={star1} alt="star" />
+        
+        <img className='scroll__star--2' src={star2} alt="star" />
 
         <div className="scroll__effect"></div>
       </div>

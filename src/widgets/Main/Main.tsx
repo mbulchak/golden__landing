@@ -1,4 +1,5 @@
 import { Modules } from '../Modules';
+import { Reviews } from '../Reviews';
 import { ScrollSection } from '../ScrollSection';
 import { Services } from '../Services';
 import { Team } from '../Team';
@@ -16,6 +17,8 @@ export const Main = () => {
       <Team />
 
       <Modules />
+
+      <Reviews />
     </>
   );
 };

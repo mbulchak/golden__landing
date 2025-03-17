@@ -1,0 +1,175 @@
+@use './../../styles/variables' as *;
+
+.reviews {
+  width: 1180px;
+  height: 564px;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto 200px auto;
+  padding: 59px 0px 59px 80px;
+
+  border: 2px solid rgba($color: #fff, $alpha: 0.5);
+  border-radius: 25px;
+
+  background: 
+    linear-gradient( to right bottom, rgba(62, 238, 227, 0.4) 5%,  transparent, transparent, #292E4B 80%, rgba(223, 29, 255, 0.5) 95%);
+
+  position: relative;
+
+}
+
+.reviewers {
+  display: flex;
+  font-family: $font-family;
+}
+
+.reviewer {
+  &__first--part {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    border-right: 1px solid rgba(181, 181, 181, 0.4);
+
+    margin-right: 51px;
+    padding-right: 51px;
+
+    height: 446px;
+
+  }
+
+  &__star__1 {
+    position: absolute;
+
+    width: 52px;
+    height: 47px;
+    
+    top: 10px;
+    left: 25px;
+  }
+
+  &__star__2 {
+    position: absolute;
+
+    width: 61px;
+    height: 60px;
+
+    top: 44px;
+    right: 39px;
+  }
+  
+  &__coin__1 {
+    position: absolute;
+
+    width: 68px;
+    height: 73px;
+
+    bottom: 155px;
+    left: 407px;
+
+    transform: rotate(10deg);
+  }
+
+  &__coin__2 {
+    position: absolute;
+
+    width: 104px;
+    height: 104px;
+
+    transform: rotate(-47deg);
+
+    bottom: 23px;
+    right: 217px;
+  }
+
+  &__bitcoins {
+    position: absolute;
+
+    width: 131px;
+    height: 130px;
+
+    bottom: -200px;
+    left: -180px;
+
+    transform: rotate(-17deg);
+  }
+
+  &__info {
+    position: relative;
+
+    width: 408px;
+
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__image {
+    width: 43px;
+    height: 61px;
+    border-radius: 999px;
+    transform: rotate(15deg);
+
+    position: relative;
+    z-index: 2;
+  }
+
+  &__effect {
+    position: absolute;
+    top: 1px;
+    left: 3px;
+
+    width: 43px;
+    height: 61px;
+    background: linear-gradient($gray-0, #606060);
+    border-radius: 999px;
+    transform: rotate(15deg);
+    z-index: 1;
+  }
+
+  &__effect__active {
+    background: $primery;
+  }
+
+  &__title--1 {
+    font-weight: 600;
+    line-height: 130%;
+    color: #909090;
+    font-size: 24px;
+
+    cursor: pointer;
+  }
+
+  &__title--1__active {
+    color: $primery;
+  }
+
+  &__second--part {
+    width: 506px;
+
+    padding-top: 35px ;
+  }
+
+  &__title--2 {
+    color: $gray-0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+
+    margin-bottom: 24px;
+  }
+
+  &__description--1 {
+    margin-bottom: 16px;
+    line-height: 146%;
+
+  }
+
+  &__description--2 {
+    font-weight: 600;
+    color: $gray-0;
+  }
+
+}
