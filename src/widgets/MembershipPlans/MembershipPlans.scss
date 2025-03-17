@@ -1,0 +1,258 @@
+@use './../../styles/variables' as *;
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 200px;
+
+  &__titles {
+    font-family: $font-family;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 100px;
+  }
+
+  &__sub--title {
+    margin-bottom: 4px;
+  }
+
+  &__title--main {
+    color: $gray-30;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    width: 500px;
+    color: $gray-1plus;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.plan {
+  border: 1px solid rgba($color: #fff, $alpha: 0.5);
+  border-radius: 25px;
+
+  padding-inline: 22px;
+  font-family: $font-family;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+  &--1 {
+    width: 352px;
+    height: 583px;
+
+    background: linear-gradient(to right top, rgba(223, 29, 255, 0.1) 14%, transparent 55%, #292E4B 75%,rgba(62, 238, 227, 0.3) 95%);
+
+    &:hover {
+      background: linear-gradient(to right top, rgba(223, 29, 255, 0.3) -4%, rgba($color: #fff, $alpha: 0.5) 45%, rgba(62, 238, 227, 0.6) 125%);
+    }
+   }
+
+  &--2 {
+    width: 376px;
+    height: 622px;
+
+    background: 
+      linear-gradient(to right top, transparent -11%, $gray-bg 45%, $gray-bg 55%, #292E4B 85%,rgba(62, 238, 227, 0.3) 100%),
+      radial-gradient(#48CDFF, rgba(223, 29, 255, 0.3) 95%)
+    ;
+
+    &:hover {
+      background: 
+        linear-gradient(to right top, transparent -11%, rgba($color: #fff, $alpha: 0.5) 45%, rgba($color: #fff, $alpha: 0.5) 55%, #3eeee380 90%),
+        radial-gradient(#3eeee380, rgba(223, 29, 255, 0.3) 95%);
+    }
+  }
+
+  &--3 {
+    width: 352px;
+    height: 583px;
+
+    background:
+      linear-gradient(to right top, #292E4B 25%, rgba(223, 29, 255, 0.2) 75%, rgba(62, 238, 227, 0.4) 105%)
+    ;
+
+    &:hover {
+      background:
+        linear-gradient(to right top, rgba($color: #fff, $alpha: 0.6) 35%, rgba(223, 29, 255, 0.5) 75%, rgba(62, 238, 227, 0.8) 105%);
+    }
+  }
+
+  &__titles {
+    border-bottom: 1px solid #B5B5B5;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__main__title {
+    color: $gray-20;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+
+    margin-bottom: 12px;
+  }
+
+  &__main__description {
+    color: #E3E3E3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    margin-bottom: 16px;
+  }
+
+  &__secondary__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #767678;
+
+    margin-bottom: 16px;
+
+    &--1 {
+      margin-right: 16px;
+    }
+  }
+
+  &__prices {
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+
+
+    &--1 {
+      color: $primery;
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 20px;
+    }
+
+    &--2 {
+      color: #E3E3E3;
+      font-size: 12px;
+
+      margin-bottom: 16px;
+    }
+  }
+
+  &__price__main--1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 145%;
+  }
+
+  &__price__main--2 {
+    font-size: 12px;
+    line-height: 150%;
+
+    margin-right: 52px;
+  }
+
+  &__price__secondary--1 {
+    line-height: 120%;
+    text-decoration: line-through;
+
+    margin-right: 10px;
+  }
+
+  &__price__secondary--2 {
+    margin-right: 35px;
+    line-height: 150%;
+  }
+
+  &__price__secondary--3 {
+    line-height: 120%;
+    text-decoration: line-through;
+  }
+
+  // list
+
+  &__list {
+    margin: 16px 18px 32px 22px;
+  }
+
+  &__item {
+    color: #F3F3F6;
+    list-style-type: disc;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  &__add {
+    position: absolute;
+    width: 30px;
+    height: 18px;
+
+    top: 50%;
+    right: 0;
+
+    padding-inline: 4px;
+
+    background-color: $accented;
+    border-radius: 12px;
+    box-shadow: inset 1px 1px 2px #E0E5E6;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+
+    font-family: "Noto Sans", sans-serif;
+
+  }
+
+}
+
+.ellipse {
+  position: absolute;
+
+  z-index: 0;
+  transform: rotate(165deg);
+
+  &--1 {
+    top: 50%;
+
+    width: 1187px;
+    height: 514px;
+  }
+  
+  &--2 {
+    top: 30%;
+
+    width: 1724px;
+    height: 748px;
+  }
+
+  &--3 {
+    top: 10%;
+
+    width: 2378px;
+    height: 1023px;
+  }
+}
