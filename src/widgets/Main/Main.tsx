@@ -5,6 +5,7 @@ import { ScrollSection } from '../ScrollSection';
 import { Services } from '../Services';
 import { Team } from '../Team';
 import {Token} from '../Token';
+import { Video } from '../Video';
 
 export const Main = () => {
   return (
@@ -22,6 +23,8 @@ export const Main = () => {
       <Reviews />
 
       <MembershipPlans />
+
+      <Video />
     </>
   );
 };

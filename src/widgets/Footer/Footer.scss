@@ -1,0 +1,130 @@
+@use './../../styles/variables' as *;
+
+.footer {
+  height: 507px;
+  padding: 100px 0 130px 135px;
+
+  overflow: hidden;
+  
+  font-family: $font-family;
+
+  display: flex;
+  position: relative;
+
+  &--first__part {
+    display: flex;
+    gap: 163px;
+  }
+
+  &__info {
+    width: 380px;
+    height: 228px;
+
+  }
+
+  &__logo__section {
+    margin-bottom: 32px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &__logo--1 {
+    width: 47px;
+    height: 47px;
+  }
+
+  &__logo--2 {
+    width: 136px;
+    height: 26px;
+  }
+
+  &__description--1 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: $gray-40;
+
+    margin-bottom: 32px;
+
+    position: relative;
+    z-index: 1;
+
+  }
+
+  &__button {
+    width: 304px;
+    height: 56px;
+
+    padding: 16px 29px;
+    margin-bottom: 24px;
+    
+    background-color: $gray-10;
+
+    color: $gray-60;
+    text-align: start;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    box-shadow: inset 0px 2px 2px #fff;
+    border-radius: 10px;
+    border: none;
+
+    position: relative;
+    z-index: 1;
+
+    &__arrow {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__description--2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: $gray-20;
+  }
+
+  &__navigation {
+    padding-top: 80px;
+  }
+
+  &__navigation nav ul li a {
+    color: $gray-40;
+  }
+
+  &__policy {
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: $gray-20;
+    background-color: transparent;
+  }
+
+  &__effect {
+    position: absolute;
+    overflow: hidden;
+
+    width: 596px;
+    height: 595px;
+
+    background: linear-gradient(#2C4982 45%, #2CD095 45%);
+    filter: blur(200px);
+    transform: rotate(-90deg);
+
+    bottom: -45%;
+    left: -120px;
+  }
+}
