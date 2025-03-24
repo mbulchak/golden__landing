@@ -110,11 +110,12 @@
 
     position: absolute;
     top: 55px;
-    left: 345px;
+    // left: 345px;
+    left: 20%
   }
 
   &__bitcoin--1 {
-    width: 645px;
+    width: 545px;
     height: 675px;
 
     position: absolute;
@@ -141,7 +142,8 @@
 
     position: absolute;
     top: 70px;
-    right: 440px;
+    // right: 440px;
+    right: 25%;
   }
 
   &__star--third {
@@ -182,7 +184,8 @@
 
     position: absolute;
     top: 394px;
-    right: 190px;
+    // right: 190px;
+    right: 10%;
 
     z-index: 1;
   }
@@ -204,7 +207,8 @@
 
     &--1 {
       bottom: 144px;
-      right: 354px;
+      // right: 354px;
+      right: 22%;
 
       &__effect--1 {
         width: 60px;
@@ -234,7 +238,8 @@
 
     &--2 {
       top: 315px;
-      right: 129px;
+      // right: 129px;
+      right: 5%;
 
       &__effect--1 {
         width: 40%;
