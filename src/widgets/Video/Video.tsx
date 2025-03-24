@@ -8,16 +8,24 @@ import coin from './../../assets/images/coins/Etherium2.png';
 import {useRef, useState} from 'react';
 
 export const Video = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [stopVideo, setStopVideo] = useState(true);
 
-  const handleVideo = () => {
+  const handleVideo = (
+    event:
+      | React.MouseEvent<HTMLVideoElement, MouseEvent>
+      | React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    event.stopPropagation();
+
     if (!videoRef.current) return;
 
     if (videoRef.current.paused) {
       videoRef.current.play();
+      setStopVideo(false);
     } else {
       videoRef.current.pause();
+      setStopVideo(true);
     }
   };
 
@@ -34,18 +42,16 @@ export const Video = () => {
       <div className='video__content'>
         <video
           className='video__mvp'
-          onClick={handleVideo}
+          onClick={(event) => handleVideo(event)}
           ref={videoRef}
           poster={videoBG}
-          onPlay={() => setStopVideo(false)}
-          onPause={() => setStopVideo(true)}
           controls
         >
           <source className='video__main' src={video} type='video/mp4' />
         </video>
 
         {stopVideo && (
-          <div className='play' onClick={handleVideo}>
+          <div className='play' onClick={(event) => handleVideo(event)}>
             <img className='play__image' src={play} alt='button play' />
           </div>
         )}
