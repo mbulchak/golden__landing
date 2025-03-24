@@ -1,15 +1,26 @@
-# React + TypeScript + Vite
+# Crypto Adventure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This landing provides you information about Crypto
+- [Demo Page](https://mbulchak.github.io/golden__landing/)
 
-- [Demo](https://github.com/mbulchak/main--temp/)
+## Hardshipts
+- usage of gradients
 
-## Don't forget It, if you are doing a deploy
+## Features and Instruments
+- Header, Main, Footer sections with a lot of sub-section
+- Using Html, CSS(SCSS), library GSAP for animation, Flex, Grid
 
-If you are doing deploy, don't forget to create a personal token and in .github/workflows/deploy.yml change
-
-
+## Instructions
+- clone the repo
+- install dependency
 ```js
-env:
-          GITHUB_TOKEN: ${{ secrets.YOUR_SECRET_TITLE }}
+npm install
 ```
+- open the terminal, and run this command
+```js
+npm run dev
+```
+- click on the url in the terminal
+
+## Attention
+this landing is not adaptive to tablet and to phone devices
